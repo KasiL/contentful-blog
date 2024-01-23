@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 import { getServerSideTranslations } from './utils/get-serverside-translations';
 
+import { HeroBanner } from '@src/components/heroBanner';
 import { ArticleHero, ArticleTileGrid } from '@src/components/features/article';
 import { SeoFields } from '@src/components/features/seo';
 import { Container } from '@src/components/shared/container';
@@ -19,10 +20,22 @@ const Page = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
   const posts = useContentfulLiveUpdates(props.posts);
 
   if (!page?.featuredBlogPost || !posts) return;
+  console.log(page);
 
   return (
     <>
       {page.seoFields && <SeoFields {...page.seoFields} />}
+      <Container>
+        {page.hero && (
+          <HeroBanner
+            title={page.hero.title}
+            subtitle={page.hero.subtitle}
+            backgroundImage={page.hero.backgroundImage}
+            buttonText={page.hero.buttonText}
+            buttonUrl={page.hero.buttonUrl}
+          />
+        )}
+      </Container>
       <Container>
         <Link href={`/${page.featuredBlogPost.slug}`}>
           <ArticleHero article={page.featuredBlogPost} />
@@ -31,9 +44,10 @@ const Page = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
 
       {/* Tutorial: contentful-and-the-starter-template.md */}
       {/* Uncomment the line below to make the Greeting field available to render */}
-      {/*<Container>*/}
-      {/*  <div className="my-5 bg-colorTextLightest p-5 text-colorBlueLightest">{page.greeting}</div>*/}
-      {/*</Container>*/}
+
+      <Container>
+        <div className="my-5 bg-colorTextLightest p-5 text-colorBlueLightest">{page.greeting}</div>
+      </Container>
 
       <Container className="my-8  md:mb-10 lg:mb-16">
         <h2 className="mb-4 md:mb-6">{t('landingPage.latestArticles')}</h2>

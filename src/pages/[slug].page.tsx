@@ -7,6 +7,7 @@ import { getServerSideTranslations } from './utils/get-serverside-translations';
 import { ArticleContent, ArticleHero, ArticleTileGrid } from '@src/components/features/article';
 import { SeoFields } from '@src/components/features/seo';
 import { Container } from '@src/components/shared/container';
+import { HeroBanner } from '@src/components/heroBanner';
 import { client, previewClient } from '@src/lib/client';
 import { revalidateDuration } from '@src/pages/utils/constants';
 

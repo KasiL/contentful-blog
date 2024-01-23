@@ -1,0 +1,9 @@
+fragment HeroFields on Hero {
+  title
+  subtitle
+  backgroundImage {
+    url
+  }
+  buttonText
+  buttonUrl
+}

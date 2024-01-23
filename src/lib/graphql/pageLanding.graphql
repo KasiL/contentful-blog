@@ -13,7 +13,11 @@ fragment PageLandingFields on PageLanding {
   }
   # Tutorial: contentful-and-the-starter-template.md
   # Uncomment the line below to add the Greeting field to the query
-  # greeting
+   greeting
+
+  hero {
+    ...HeroFields
+  }
 }
 
 query pageLanding($locale: String, $preview: Boolean) {
