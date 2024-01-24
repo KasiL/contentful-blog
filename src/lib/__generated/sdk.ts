@@ -858,7 +858,7 @@ export enum EntryOrder {
   SysPublishedVersionDesc = 'sys_publishedVersion_DESC'
 }
 
-/** Hero Banner with background image or video, title, intro text and button [See type definition](https://app.contentful.com/spaces/ckw4cgdbpwfi/content_types/hero) */
+/** AI generated , duplicate of heroBanner [See type definition](https://app.contentful.com/spaces/ckw4cgdbpwfi/content_types/hero) */
 export type Hero = Entry & {
   __typename?: 'Hero';
   backgroundImage?: Maybe<Asset>;
@@ -872,38 +872,38 @@ export type Hero = Entry & {
 };
 
 
-/** Hero Banner with background image or video, title, intro text and button [See type definition](https://app.contentful.com/spaces/ckw4cgdbpwfi/content_types/hero) */
+/** AI generated , duplicate of heroBanner [See type definition](https://app.contentful.com/spaces/ckw4cgdbpwfi/content_types/hero) */
 export type HeroBackgroundImageArgs = {
   locale?: InputMaybe<Scalars['String']>;
   preview?: InputMaybe<Scalars['Boolean']>;
 };
 
 
-/** Hero Banner with background image or video, title, intro text and button [See type definition](https://app.contentful.com/spaces/ckw4cgdbpwfi/content_types/hero) */
+/** AI generated , duplicate of heroBanner [See type definition](https://app.contentful.com/spaces/ckw4cgdbpwfi/content_types/hero) */
 export type HeroButtonTextArgs = {
   locale?: InputMaybe<Scalars['String']>;
 };
 
 
-/** Hero Banner with background image or video, title, intro text and button [See type definition](https://app.contentful.com/spaces/ckw4cgdbpwfi/content_types/hero) */
+/** AI generated , duplicate of heroBanner [See type definition](https://app.contentful.com/spaces/ckw4cgdbpwfi/content_types/hero) */
 export type HeroButtonUrlArgs = {
   locale?: InputMaybe<Scalars['String']>;
 };
 
 
-/** Hero Banner with background image or video, title, intro text and button [See type definition](https://app.contentful.com/spaces/ckw4cgdbpwfi/content_types/hero) */
+/** AI generated , duplicate of heroBanner [See type definition](https://app.contentful.com/spaces/ckw4cgdbpwfi/content_types/hero) */
 export type HeroLinkedFromArgs = {
   allowedLocales?: InputMaybe<Array<InputMaybe<Scalars['String']>>>;
 };
 
 
-/** Hero Banner with background image or video, title, intro text and button [See type definition](https://app.contentful.com/spaces/ckw4cgdbpwfi/content_types/hero) */
+/** AI generated , duplicate of heroBanner [See type definition](https://app.contentful.com/spaces/ckw4cgdbpwfi/content_types/hero) */
 export type HeroSubtitleArgs = {
   locale?: InputMaybe<Scalars['String']>;
 };
 
 
-/** Hero Banner with background image or video, title, intro text and button [See type definition](https://app.contentful.com/spaces/ckw4cgdbpwfi/content_types/hero) */
+/** AI generated , duplicate of heroBanner [See type definition](https://app.contentful.com/spaces/ckw4cgdbpwfi/content_types/hero) */
 export type HeroTitleArgs = {
   locale?: InputMaybe<Scalars['String']>;
 };

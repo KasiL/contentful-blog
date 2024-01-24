@@ -540,7 +540,7 @@ enum EntryOrder {
 }
 
 """
-Hero Banner with background image or video, title, intro text and button [See type definition](https://app.contentful.com/spaces/ckw4cgdbpwfi/content_types/hero)
+AI generated , duplicate of heroBanner [See type definition](https://app.contentful.com/spaces/ckw4cgdbpwfi/content_types/hero)
 """
 type Hero implements Entry {
   backgroundImage(locale: String, preview: Boolean): Asset
